@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Gallery</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+			<link href="./gallery/vendor.min.css" rel="stylesheet">
+			<link href="./gallery/app.min.css" rel="stylesheet">
+			<link href="./gallery/lightbox.css" rel="stylesheet">
+			<link href="../../assets/css/transparent/app.min.css" rel="stylesheet" />
+	<!-- ================== END BASE CSS STYLE ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL CSS STYLE ================== -->
+			<link href="../../assets/plugins/superbox/superbox.min.css" rel="stylesheet" />
+			<link href="../../assets/plugins/lity/dist/lity.min.css" rel="stylesheet" />
+	<!-- ================== END PAGE LEVEL CSS STYLE ================== -->
+	
+
+</head>
+		<body class="pace-done ">
+		<div class="pace pace-inactive">
+		<div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+		  <div class="pace-progress-inner"></div>
+		</div>
+		<div class="pace-activity"></div></div>
+	<!-- begin page-cover -->
+		<div class="app-cover"></div>
+	<!-- end page-cover -->
+<!-- begin #page-loader -->
+		<div id="loader" class="app-loader loaded">
+		<span class="spinner"></span>
+		</div>
+<!-- end #page-loader -->
+	<!-- begin #header -->
+		<div id="app" class="app app-header-fixed app-sidebar-fixed">
+
+		<div id="header" class="app-header">
+	<!-- begin #header -->
+		<div id="header" class="header navbar-default show-bg">
+			<!-- begin navbar-header -->
+			<div class="navbar-header">
+				<a href="../../index.html" class="navbar-brand">
+				<span class="fab fa-earlybirds width-30 height-30 f-s-20 bg-yellow text-inverse text-center rounded-corner">
+				</span> <b>YUDHIK DG</b> </a>
+				
+			</div>
+			<!-- end navbar-header -->
+			
+			<!-- begin header-nav -->
+			<ul class="navbar-nav navbar-right">
+				<li class="navbar-form">
+					<form action="" method="POST" name="search_form">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Enter keyword" />
+							<button type="submit" class="btn btn-search">
+							<i class="fa fa-search"></i>
+							</button>
+						</div>
+					</form>
+				</li>
+				<li class="dropdown">
+					<a href="#" data-toggle="dropdown" class="dropdown-toggle f-s-14">
+						<i class="fa fa-bell"></i>
+						<span class="label">5</span>
+					</a>
+					<div class="dropdown-menu media-list dropdown-menu-right">
+						<div class="dropdown-header">NOTIFICATIONS (5)</div>
+						
+						<a href="javascript:;" class="dropdown-item media">
+							<div class="media-left">
+								<i class="fa fa-bug media-object bg-silver-darker"></i>
+							</div>
+							<div class="media-body">
+								<h6 class="media-heading">Welcome to My Website <i class="fa fa-exclamation-circle text-danger"></i></h6>
+								<div class="text-muted f-s-11">3 minutes ago</div>
+							</div>
+						</a>
+						<a href="javascript:;" class="dropdown-item media">
+							<div class="media-left">
+								<img src="../../assets/img/user/user-1.jpg" class="media-object" alt="" />
+								<i class="fab fa-facebook-messenger text-blue media-object-icon"></i>
+							</div>
+							<div class="media-body">
+								<h6 class="media-heading">Mr...</h6>
+								<p>Server Error Reports</p>
+								<div class="text-muted f-s-11">25 minutes ago</div>
+							</div>
+						</a>
+						<a href="javascript:;" class="dropdown-item media">
+							<div class="media-left">
+								<img src="../../assets/img/user/user-2.jpg" class="media-object" alt="" />
+								<i class="fab fa-facebook-messenger text-blue media-object-icon"></i>
+							</div>
+							<div class="media-body">
+								<h6 class="media-heading">Mr...</h6>
+								<p>Server Error Reports</p>
+								<div class="text-muted f-s-11">35 minutes ago</div>
+							</div>
+						</a>
+						<a href="javascript:;" class="dropdown-item media">
+							<div class="media-left">
+								<i class="fa fa-plus media-object bg-silver-darker"></i>
+							</div>
+							<div class="media-body">
+								<h6 class="media-heading"> New User Registered</h6>
+								<div class="text-muted f-s-11">1 hour ago</div>
+							</div>
+						</a>
+						<a href="javascript:;" class="dropdown-item media">
+							<div class="media-left">
+								<i class="fa fa-envelope media-object bg-silver-darker"></i>
+								<i class="fab fa-google text-warning media-object-icon f-s-14"></i>
+							</div>
+							<div class="media-body">
+								<h6 class="media-heading"> Server Error Reports</h6>
+								<div class="text-muted f-s-11">2 hour ago</div>
+							</div>
+						</a>
+						<div class="dropdown-footer text-center">
+							<a href="javascript:;">View more</a>
+						</div>
+					</div>
+				</li>
+				<li class="dropdown navbar-user">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<img src="../../assets/img/user/user-13.jpg" alt="" /> 
+						<span class="d-none d-md-inline">Yudhik DG</span> <b class="caret"></b>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end me-1">
+<a href="../../assets/page/about.html" class="dropdown-item">About</a>
+<a href="javascript:;" class="dropdown-item d-flex align-items-center">
+Inbox
+<span class="badge bg-danger rounded-pill ms-auto pb-4px">2</span>
+</a>
+<a href="javascript:;" class="dropdown-item">Calendar</a>
+<a href="javascript:;" class="dropdown-item">Setting</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Log Out</a>
+</div>
+				</li>
+			</ul>
+			<!-- end header navigation right -->
+</div>
+</div>
+
+</div>
+<!-- end #header -->
+		
+		<!-- begin #content -->
+		<div id="content" class="content content-full-width">
+			<!-- begin profile -->
+			<div class="profile">
+				<div class="profile-header">
+					<!-- BEGIN profile-header-cover -->
+					<div class="profile-header-cover"></div>
+					<!-- END profile-header-cover -->
+					<!-- BEGIN profile-header-content -->
+					<div class="profile-header-content">
+						<!-- BEGIN profile-header-img -->
+						<div class="profile-header-img">
+							<img src="../../assets/img/user/user-13.jpg" alt="">
+						</div>
+						<!-- END profile-header-img -->
+						<!-- BEGIN profile-header-info -->
+						<div class="profile-header-info">
+							<h4 class="mt-0 mb-1"></h4><br><br>
+							<p class="mb-2"></p>
+							<a href="#" class="btn btn-xs btn-yellow"><h3>G A L L E R Y</h3></a>
+						</div>
+						<!-- END profile-header-info -->
+					</div>
+					<!-- END profile-header-content -->
+					<!-- BEGIN profile-header-tab -->
+					<ul class="profile-header-tab nav nav-tabs">
+						<li class="nav-item"><a href="#gallery" class="nav-link active" data-toggle="tab"></a></li>
+						</ul>
+					<!-- END profile-header-tab -->
+				</div>
+			</div>
+			<!-- end profile -->
+
+		<!-- BEGIN profile-sidebar-tab -->
+					<div class="app-sidebar-bg"></div>
+					<div class="app-sidebar-mobile-backdrop"><a href="https://seantheme.com/color-admin/admin/transparent/gallery.html#" data-dismiss="app-sidebar-mobile" class="stretched-link"></a></div>
+
+
+					<div id="content" class="app-content">
+
+					
+
+					<div id="options" class="mb-3">
+					<div class="d-flex flex-wrap text-nowrap mb-n1" id="filter" data-option-key="filter">
+					<a href="https://seantheme.com/color-admin/admin/transparent/gallery.html#show-all" class="btn btn-white btn-sm border-0 me-1 mb-1 active" data-option-value="*">Show All</a>
+					<a href="https://seantheme.com/color-admin/admin/transparent/gallery.html#gallery-group-1" class="btn btn-white btn-sm border-0 me-1 mb-1" data-option-value=".gallery-group-1">Gallery Group 1</a>
+					<a href="https://seantheme.com/color-admin/admin/transparent/gallery.html#gallery-group-2" class="btn btn-white btn-sm border-0 me-1 mb-1" data-option-value=".gallery-group-2">Gallery Group 2</a>
+					<a href="https://seantheme.com/color-admin/admin/transparent/gallery.html#gallery-group-3" class="btn btn-white btn-sm border-0 me-1 mb-1" data-option-value=".gallery-group-3">Gallery Group 3</a>
+					<a href="https://seantheme.com/color-admin/admin/transparent/gallery.html#gallery-group-4" class="btn btn-white btn-sm border-0 me-1 mb-1" data-option-value=".gallery-group-4">Gallery Group 4</a>
+					</div>
+					</div>
+
+
+					<div id="gallery" class="gallery" style="position: relative; height: 3419.79px;">
+
+					<div class="image gallery-group-1" style="position: absolute; left: 0px; top: 0px;">
+					<div class="image-inner">
+					<a href="https://bit.ly/kirimdg" data-lightbox="gallery-group-1">
+					<div class="img" style="background-image: url(../../assets/img/gallery/gallery-1.jpg)"></div>
+					</a>
+					<p class="image-caption">
+					#1382 - 3D Arch
+					</p>
+					</div>
+					<div class="image-info">
+					<h5 class="title">Lorem ipsum dolor sit amet</h5>
+					<div class="d-flex align-items-center mb-2">
+					<div class="rating">
+					<span class="star active"></span>
+					<span class="star active"></span>
+					<span class="star active"></span>
+					<span class="star"></span>
+					<span class="star"></span>
+					</div>
+					<div class="ms-auto">
+					<small>by</small> <a href="javascript:;">Sean Ngu</a>
+					</div>
+					</div>
+					<div class="desc">
+					Nunc velit urna, aliquam at interdum sit amet, lacinia sit amet ligula. Quisque et erat eros. Aenean auctor metus in tortor placerat, non luctus justo blandit.
+					</div>
+					</div>
+					</div>
+
+
+					<div class="image gallery-group-1" style="position: absolute; left: 0px; top: 341.979px;">
+					<div class="image-inner">
+					<a href="../../assets/img/gallery/gallery-2.jpg" data-lightbox="gallery-group-1">
+					<div class="img" style="background-image: url(../../assets/img/gallery/gallery-2.jpg)"></div>
+					</a>
+					<p class="image-caption">
+					#2343 - Madness Arch
+					</p>
+					</div>
+					<div class="image-info">
+					<h5 class="title">Fusce aliquet ac quam at tincidunt</h5>
+					<div class="d-flex align-items-center mb-2">
+					<div class="rating">
+					<span class="star active"></span>
+					<span class="star active"></span>
+					<span class="star"></span>
+					<span class="star"></span>
+					<span class="star"></span>
+					</div>
+					<div class="ms-auto">
+					<small>by</small> <a href="javascript:;">Camryn Wong</a>
+					</div>
+					</div>
+					<div class="desc">
+					Fusce eu rutrum nisi, ut pretium mi. Sed mollis nisi sed auctor molestie. Vestibulum dictum pharetra leo sed euismod.
+					</div>
+					</div>
+					</div>
+
+
+					<div class="image gallery-group-1" style="position: absolute; left: 0px; top: 683.958px;">
+					<div class="image-inner">
+					<a href="../../assets/img/gallery/gallery-3.jpg" data-lightbox="gallery-group-1">
+					<div class="img" style="background-image: url(../../assets/img/gallery/gallery-3.jpg)"></div>
+					</a>
+					<p class="image-caption">
+					#3452 - Scottwills Arch
+					</p>
+					</div>
+					<div class="image-info">
+					<h5 class="title">Etiam lobortis egestas nisl</h5>
+					<div class="d-flex align-items-center mb-2">
+					<div class="rating">
+					<span class="star active"></span>
+					<span class="star active"></span>
+					<span class="star active"></span>
+					<span class="star active"></span>
+					<span class="star active"></span>
+					</div>
+					<div class="ms-auto">
+					<small>by</small> <a href="javascript:;">Lelouch Wong</a>
+					</div>
+					 </div>
+					<div class="desc">
+					Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus eget ultricies arcu.
+					</div>
+					</div>
+					</div>
+
+
+					<div class="image gallery-group-2" style="position: absolute; left: 0px; top: 1025.94px;">
+					<div class="image-inner">
+					<a href="../../assets/img/gallery/gallery-4.jpg" data-lightbox="gallery-group-2">
+					<div class="img" style="background-image: url(../../assets/img/gallery/gallery-4.jpg)"></div>
+					</a>
+					<p class="image-caption">
+					#4123 - Scottwills Pinecone
+					</p>
+					</div>
+					<div class="image-info">
+					<h5 class="title">Donec mi quis volutpat ornare</h5>
+					<div class="d-flex align-items-center mb-2">
+					<div class="rating">
+					<span class="star"></span>
+					<span class="star"></span>
+					<span class="star"></span>
+					<span class="star"></span>
+					<span class="star"></span>
+					</div>
+					<div class="ms-auto">
+					<small>by</small> <a href="javascript:;">Richard Leong</a>
+					</div>
+					</div>
+					<div class="desc">
+					Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut et augue luctus libero dignissim sodales, sapien consequat lacinia fringilla.
+					</div>
+					</div>
+					</div>
+
+
+					<div class="image gallery-group-2" style="position: absolute; left: 0px; top: 1367.92px;">
+					<div class="image-inner">
+					<a href="../../assets/img/gallery/gallery-5.jpg" data-lightbox="gallery-group-2">
+					<div class="img" style="background-image: url(../../assets/img/gallery/gallery-5.jpg)"></div>
+					</a>
+					<p class="image-caption">
+					#9200 Kariminal Rider
+					</p>
+					</div>
+					<div class="image-info">
+					<h5 class="title">Donec pretium volutpat ornare</h5>
+					<div class="d-flex align-items-center mb-2">
+					<div class="rating">
+					<span class="star active"></span>
+					<span class="star active"></span>
+					<span class="star active"></span>
+					<span class="star active"></span>
+					<span class="star"></span>
+					</div>
+					<div class="ms-auto">
+					<small>by</small> <a href="javascript:;">Derrick Wong</a>
+					</div>
+					</div>
+					<div class="desc">
+					Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut et augue luctus libero, feugiat sapien consequat lacinia fringilla.
+					</div>
+					</div>
+					</div>
+
+
+					<div class="image gallery-group-3" style="position: absolute; left: 0px; top: 1709.89px;">
+					<div class="image-inner">
+					<a href="../../assets/img/gallery/gallery-6.jpg" data-lightbox="gallery-group-3">
+					<div class="img" style="background-image: url(../../assets/img/gallery/gallery-6.jpg)"></div>
+					</a>
+					<p class="image-caption">
+					#1832 Scottwills Autumn
+					</p>
+					</div>
+					<div class="image-info">
+					<h5 class="title">Mi quis volutpat ornare sodales</h5>
+					<div class="d-flex align-items-center mb-2">
+					<div class="rating">
+					<span class="star active"></span>
+					<span class="star active"></span>
+					<span class="star"></span>
+					<span class="star"></span>
+					<span class="star"></span>
+					</div>
+					<div class="ms-auto">
+					<small>by</small> <a href="javascript:;">Apple Tong</a>
+					</div>
+					</div>
+					<div class="desc">
+					Ut et augue luctus libero dignissim sodales. Fusce feugiat sapien consequat lacinia fringilla. Vivamus eget ultricies arcu.
+					</div>
+					</div>
+					</div>
+
+
+					<div class="image gallery-group-3" style="position: absolute; left: 0px; top: 2051.87px;">
+					<div class="image-inner">
+					<a href="../../assets/img/gallery/gallery-7.jpg" data-lightbox="gallery-group-3">
+					<div class="img" style="background-image: url(../../assets/img/gallery/gallery-7.jpg)"></div>
+					</a>
+					<p class="image-caption">
+					#0229 Scottwills Autumn 2
+					</p>
+					</div>
+					<div class="image-info">
+					<h5 class="title">Vestibulum ante ipsum primis</h5>
+					<div class="d-flex align-items-center mb-2">
+					<div class="rating">
+					<span class="star active"></span>
+					<span class="star active"></span>
+					<span class="star active"></span>
+					<span class="star"></span>
+					<span class="star"></span>
+					</div>
+					<div class="ms-auto">
+					<small>by</small> <a href="javascript:;">Thomas Wong</a>
+					</div>
+					</div>
+					<div class="desc">
+					Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut et augue luctus libero dignissim sodales, sapien consequat lacinia fringilla.
+					</div>
+					</div>
+					</div>
+
+
+					<div class="image gallery-group-4" style="position: absolute; left: 0px; top: 2393.85px;">
+					<div class="image-inner">
+					<a href="../../assets/img/gallery/gallery-8.jpg" data-lightbox="gallery-group-4">
+					<div class="img" style="background-image: url(../../assets/img/gallery/gallery-8.jpg)"></div>
+					</a>
+					<p class="image-caption">
+					#5721 Scottwills Snow
+					</p>
+					</div>
+					<div class="image-info">
+					<h5 class="title">Nunc eget hendrerit nisi sodales</h5>
+					<div class="d-flex align-items-center mb-2">
+					<div class="rating">
+					<span class="star active"></span>
+					<span class="star active"></span>
+					<span class="star active"></span>
+					<span class="star active"></span>
+					<span class="star active"></span>
+					</div>
+					<div class="ms-auto">
+					<small>by</small> <a href="javascript:;">Andy Wong</a>
+					</div>
+					</div>
+					<div class="desc">
+					Ut et augue nisi sodales luctus libero dignissim sodales. Fusce feugiat nisi sodales sapien consequat lacinia fringilla.
+					</div>
+					</div>
+					</div>
+
+
+					<div class="image gallery-group-4" style="position: absolute; left: 0px; top: 2735.83px;">
+					<div class="image-inner">
+					<a href="../../assets/img/gallery/gallery-9.jpg" data-lightbox="gallery-group-4">
+					<div class="img" style="background-image: url(../../assets/img/gallery/gallery-9.jpg)"></div>
+					</a>
+					<p class="image-caption">
+					#9921 Scottwills Riverbank
+					</p>
+					</div>
+					<div class="image-info">
+					<h5 class="title">Nunc eget hendrerit nisi dignissim</h5>
+					<div class="d-flex align-items-center mb-2">
+					<div class="rating">
+					<span class="star"></span>
+					<span class="star"></span>
+					<span class="star"></span>
+					<span class="star"></span>
+					<span class="star"></span>
+					</div>
+					<div class="ms-auto">
+					<small>by</small> <a href="javascript:;">William Tan</a>
+					</div>
+					</div>
+					<div class="desc">
+					Ut et augue luctus libero dignissim sodales. Fusce feugiat sapien consequat libero dignissim lacinia fringilla.
+					</div>
+					</div>
+					</div>
+
+
+					<div class="image gallery-group-4" style="position: absolute; left: 0px; top: 3077.81px;">
+					<div class="image-inner">
+					<a href="../../assets/img/gallery/gallery-10.jpg" data-lightbox="gallery-group-4">
+					<div class="img" style="background-image: url(../../assets/img/gallery/gallery-10.jpg)"></div>
+					</a>
+					<p class="image-caption">
+					#6436 Scottwills Buss
+					</p>
+					</div>
+					<div class="image-info">
+					<h5 class="title">Sed mollis nisi sed auctor</h5>
+					<div class="d-flex align-items-center mb-2">
+					<div class="rating">
+					<span class="star active"></span>
+					<span class="star active"></span>
+					<span class="star"></span>
+					<span class="star"></span>
+					<span class="star"></span>
+					</div>
+					<div class="ms-auto">
+					<small>by</small> <a href="javascript:;">David King</a>
+					</div>
+					</div>
+					<div class="desc">
+					Vestibulum dictum pharetra leo sed euismod. Lorem ipsum dolor sit amet, consectetur adipiscing feugiat sapien elit.
+					</div>
+					</div>
+					</div>
+
+					</div>
+
+					</div>
+<!-- END profile-sidebar-tab -->
+
+
+
+
+<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+</div>
+
+		<!-- ================== BEGIN BASE JS ================== -->
+			<script src="../../assets/js/app.min.js"></script>
+			<script src="../../assets/js/theme/transparent.min.js"></script>
+			<script async="" src="./gallery/analytics.js"></script>
+			<script src="./gallery/vendor.min.js" type="text/javascript"></script>
+			<script src="./gallery/app.min.js" type="text/javascript"></script>
+		<!-- ================== END BASE JS ================== -->
+	
+			<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+			<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+			<script src="../../assets/plugins/superbox/jquery.superbox.min.js"></script>
+			<script src="../../assets/plugins/lity/dist/lity.min.js"></script>
+			<script src="../../assets/js/demo/profile.demo.js"></script>
+			<script src="./gallery/isotope.pkgd.min.js" type="text/javascript"></script>
+			<script src="./gallery/lightbox.min.js" type="text/javascript"></script>
+			<script src="./gallery/gallery.demo.js" type="text/javascript"></script>
+			<!-- ================== END PAGE LEVEL JS ================== -->
+			
+			
+			<script type="text/javascript">
+					(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+					})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+					ga('create', 'UA-53034621-1', 'auto');
+					ga('send', 'pageview');
+
+				</script>
+			
+</body>
+</html>
